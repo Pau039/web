@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Plant Shipping</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0f2f1, #b2dfdb); /* Gradient Blue-Green */
+        }
+
+        header {
+            background: linear-gradient(to right, #5df887, #195621); /* Gradient Dark Blue-Indigo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3498db; /* Blue */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #bdc3c7; /* Silver */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .status span {
+            margin-left: 10px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+
+        .status .pending {
+            color: #f39c12; /* Orange */
+        }
+
+        .status .shipped {
+            color: #27ae60; /* Green */
+        }
+
+        .status .delivered {
+            color: #3498db; /* Blue */
+        }
+
+        /* Plant Theme */
+        .plant-icon {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        /* Elegant Decoration */
+        .decor-line {
+            border-top: 2px solid #bdc3c7; /* Silver */
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Green Oasis Plant Shipping</h1>
+    </header>
+
+    <section>
+        <h2>Product Details</h2>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <td>Palm Seeds</td>
+            </tr>
+            <tr>
+                <th>Order Number</th>
+                <td>876543210</td>
+            </tr>
+            <tr>
+                <th>Shipping Address</th>
+                <td>789 Greenhouse Street, Blooms City, Floraland</td>
+            </tr>
+        </table>
+
+        <div class="decor-line"></div>
+
+        <h2>Shipping Status</h2>
+        <div class="status shipped">
+            <img class="plant-icon" src="pal.gif" alt="Leaf Icon">
+            <span>Shipped</span>
+        </div>
+    </section>
+
+    <div class="decor-line"></div>
+
+    <div class="footer">
+        &copy; 2023 Green Oasis Plant Shipping. All rights reserved.
+    </div>
+
+</body>
+</html>

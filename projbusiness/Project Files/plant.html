@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plant Process</title>
+</head>
+<style>
+	body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8BC34A; /* Green background color */
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.plant-card {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.plant-card h2 {
+    color: #4CAF50; /* Green title color */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+</style>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="plant-card">
+                <h2>Bamboo Seeds</h2>
+				<b><p>Planting Process: Bamboo Seeds:<br></b>
+					Step 1: Fill a seed tray or pots with a well-draining potting mix.<br>
+					Step 2: Plant the bamboo seeds about 1 inch deep in the soil.<br>
+					Step 3: Water the soil thoroughly.<br>
+					Step 4: Place the tray or pots in a warm, bright location with indirect sunlight.<br>
+					Step 5: Keep the soil consistently moist, but not waterlogged.<br>
+					Step 6: Once seedlings emerge, transplant them to larger pots or outdoor locations if needed. </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 5 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+            <!-- Add similar plant-card divs for other plants -->
+			<div class="plant-card">
+                <h2>Cauliflower Seeds</h2>
+				<b><p>Planting Process:Cauliflower Seeds:</b><br>
+					Step 1: Start cauliflower seeds indoors in seed trays or small pots.<br>
+					Step 2: Plant the seeds ¼ inch deep in a rich, well-draining potting mix.<br>
+					Step 3: Keep the soil consistently moist and provide ample light, ideally using grow lights or placing near a south-facing window.<br>
+					Step 4: Once seedlings have at least two true leaves, transplant them into larger pots or directly into the garden.<br>
+					Step 5: Ensure they are spaced appropriately based on the specific variety's requirements.<br>
+					Step 6: Water regularly and provide proper fertilization.
+					 </p>
+                <b><p>Ratings:</b> 4.5</p>
+               <b><p>Lifespan:</b>  2 to 3 months</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Chili Seeds</h2>
+				<b><p>Plant Description: Chili Seeds:<br></b>
+					Step 1: Plant chili seeds in small pots or seed trays filled with well-draining soil, about ¼ inch deep.<br>
+					Step 2: Provide ample light, warmth, and consistent moisture for germination.<br>
+					Step 3: Once seedlings emerge, transplant them into larger pots or directly into the garden after the last frost.<br>
+					Step 4: Provide support for taller chili varieties.<br>
+					Step 5: Water regularly and fertilize as needed
+					 </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 5 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Petuania Seeds</h2>
+				<b><p>Plant Description: Petunia Seeds:<br></b>
+					Step 1: Fill a seed tray or pots with seed-starting mix.<br>
+					Step 2: Sow petunia seeds on the surface of the soil, lightly pressing them down.<br>
+					Step 3: Mist the surface with water to settle the seeds.<br>
+					Step 4: Cover the tray or pots with a clear plastic dome or plastic wrap to create a mini-greenhouse effect.<br>
+					Step 5: Place in a warm area with indirect light.<br>
+					Step 6: Once seedlings emerge, remove the cover and provide ample light. </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 10 to 12 weeks</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Lotus Seeds</h2>
+				<b><p>Planting Process: Lotus Seeds:<br></b>
+					Step 1: Soak lotus seeds in warm water for 24-48 hours to soften the hard outer shell.<br>
+					Step 2: Plant the seeds in a container with aquatic soil, submerging them about ½ inch deep in water.<br>
+					Step 3: Place the container in a warm, sunny location with at least 6 hours of direct sunlight daily.<br>
+					Step 4: Maintain a water temperature of around 75-85°F (24-29°C).<br>
+					Step 5: As the plant grows, gradually increase water depth. </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 5 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Neem Seeds</h2>
+				<b><p>Plantin Process: Neem Seeds:<br></b>
+					Step 1: Fill pots or seed trays with well-draining potting mix.<br>
+					Step 2: Plant neem seeds about 1 inch deep in the soil.<br>
+					Step 3: Water thoroughly and place in a warm location with indirect sunlight.<br>
+					Step 4: Keep the soil consistently moist but not waterlogged.<br>
+					Step 5: Once seedlings emerge, transplant them to larger pots or directly into the garden.
+					 </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 50 to 100 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Palm Seeds</h2>
+				<b><p>Planting Process: Palm Seeds:<br></b>
+					Step 1: Fill pots with well-draining potting mix.<br>
+					Step 2: Plant palm seeds about 1 inch deep in the soil.<br>
+					Step 3: Water thoroughly and place in a warm location with indirect sunlight.<br>
+					Step 4: Keep the soil consistently moist but not waterlogged.<br>
+					Step 5: Once seedlings emerge, transplant them to larger pots or directly into the garden. </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 5 to 15 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Rose Seeds</h2>
+				<b><p>Planting Process: Rose Seeds :<br></b>
+					Step 1: Fill pots with well-draining potting mix.<br>
+					Step 2: Plant palm seeds about 1 inch deep in the soil.<br>
+					Step 3: Water thoroughly and place in a warm location with indirect sunlight.<br>
+					Step 4: Keep the soil consistently moist but not waterlogged.<br>
+					Step 5: Once seedlings emerge, transplant them to larger pots or directly into the garden.</p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 5 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Pumpkin Seeds</h2>
+				<b><p>Planting Process: Pumpkin Seeds:<br></b>
+					Step 1: Plant pumpkin seeds directly into the garden or in large pots filled with well-draining soil.<br>
+					Step 2: Sow the seeds about 1 inch deep, placing 3-4 seeds per hill.<br>
+					Step 3: Provide full sun and space the hills according to the specific variety's requirements.<br>
+					Step 4: Keep the soil consistently moist.<br>
+					Step 5: Once seedlings are established, thin them to the healthiest plant per hill.
+					 </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 80 to 125 days</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+
+			<div class="plant-card">
+                <h2>Saffron Bulbs</h2>
+				<b><p>Planting Process: Saffron Bulbs:<br></b>
+					Step 1: Plant saffron bulbs in the fall, about 4 inches deep in well-draining soil.<br>
+					Step 2: Choose a location with full sun and good air circulation.<br>
+					Step 3: Water thoroughly after planting and keep the soil consistently moist.<br>
+					Step 4: Mulch the area to help insulate the bulbs during winter.<br>
+					Step 5: When leaves emerge in spring, ensure they receive adequate sunlight for healthy growth. </p>
+                <b><p>Ratings:</b> 4.5</p>
+                <b><p>Lifespan:</b> 6 to 7 years</p>
+                <div class="button-container">
+                    <button class="button" onclick="learnMore()">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <button class="prev-button" onclick="prevCard()">&#10094;</button>
+        <button class="next-button" onclick="nextCard()">&#10095;</button>
+    </div>
+
+   <script>
+	let currentCard = 0;
+const cards = document.querySelectorAll('.plant-card');
+
+function showCard(index) {
+    cards.forEach((card, i) => {
+        card.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+function nextCard() {
+    currentCard = (currentCard + 1) % cards.length;
+    showCard(currentCard);
+}
+
+function prevCard() {
+    currentCard = (currentCard - 1 + cards.length) % cards.length;
+    showCard(currentCard);
+}
+
+function learnMore() {
+    alert("Learn More button clicked!");
+}
+
+// Show the first card initially
+showCard(currentCard);
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>GREEN SHPOPPING</title>
+</head>
+<body>
+    <nav>
+      <ul>
+       <img src="logo.png" width="35px">
+        <li><h3><strong>Green Oasis</strong></h3></li>
+      </ul>
+    </nav>
+    <main>
+        <div class="side">
+          
+           <span class="plantname" name="" id="">
+           </span>
+            <div class="categorylist">
+               <span class="category"><b>All</b></span> <hr>
+       <span class="category"><b>Plants</b></span> <hr>
+       <span class="category"><b>Pesticides</b></span> <hr>
+       <span class="category"><b>Seeds</b></span> <hr>
+            </div>
+        
+               <h4 class="price" >Your Cart Price</h4>
+               <div class="range">
+                   
+                    <span id="price"> <input id="range" ></span>
+               </div>
+               <button class="clearfilter">Clear filters</button>
+        </div>
+        <div class="main">
+            <div class="search">
+                <div class="found">
+                    
+                </div>
+                
+                <input type="text" placeholder="search filtered products" class="search_product">
+                <div class="sortby">
+                    <h6>Sort By:</h6>
+                    <select id="sort-select">
+                        <option value="az">A-Z</option>
+                        <option value="price-low">Price (Low to High)</option>
+                        <option value="price-high">Price (High to Low)</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="latest">Latest</option>
+                      </select>
+                </div>
+            </div>
+            <div class="main_content" id="main"> </div>
+           
+        </div>
+        
+        <div class="cart">
+            <div class="cart_header">
+                <h4>My Cart</h4>
+                <h4 class="cartCount">0</h4>
+            </div>
+            <hr>
+            <div class="hey">
+            <div id="cartContainer" class="main_cart">
+            </div>
+        </div>
+        <div class="all_total">
+            <div class="checkout">
+                <a href="purchase.html"><button class="btnCheckout">Checkout</button></a>
+                <button class="removeAll id="clearCartButton>Clear Cart</button>
+            </div>
+            <h3 id="total">Total: <span id="checkoutTotal">₱0.00</span></h3>
+            
+            <div id="productDetailsModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Product Details</h2>
+                  <div id="productDetails"></div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    </main>
+</body>
+<script src="index.js" type="module"></script>
+</html>                              

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="jam.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body background ="bg1" height="300" width="300">
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="bara">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="service.html">SERVICE</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="login.html">LOG_IN</a>
+              </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Register Form</h1></center>
+				                <input type="text" placeholder="User Name"/>
+				                <input type="text" placeholder="User Name"/>
+				                <input type="password" placeholder="Password"/>
+				                <a href="login.html"><button type="button">REGISTER</button></a>
+				                <p class="message">Already Registered?<a href="login.html">Login</a></p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+                <div class="col-1">
+                    <p class='definition'>Login and Registration Form Using<br> HTML, CSS And Javascript. For More<br>Videos Please Subscribe<br>-----Seek Coding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+        $('.message a').click(function() {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+</body>
+</html>
